@@ -102,3 +102,19 @@ async function sendEmailsUsingBoardData() {
 }
 //invoke where/if necessary
 sendEmailsUsingBoardData();
+
+/*Railway config to run the script every 4 hours Monday-Friday*/
+// {
+//   "build": {
+//     "command": "npm install"
+//   },
+//   "deploy": {
+//     "command": "node monday_challenge.js"
+//   },
+//   "schedule": [
+//     {
+//       "command": "node monday_challenge.js",
+//       "cron": "0 */4 * * 1-5"
+//     }
+//   ]
+// }
